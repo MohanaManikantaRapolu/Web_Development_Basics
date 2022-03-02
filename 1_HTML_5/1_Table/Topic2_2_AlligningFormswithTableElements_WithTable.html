@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html>
+
+
+<head>
+
+    <title>Alligning forms with table elements</title>
+</head>
+
+
+<body>
+
+        <!-- <h2>Trainee Details:</h2> -->
+
+    <table>
+            <caption><h2>Trainee Details</h2></caption>
+            <tr>
+                <td> <lable for="name">Name</lable> </td>
+                <td> <input type="text" id="name" /> </td>
+            </tr>
+
+            <tr>
+                <td><lable for ="age">Age</lable></td>
+                <td><input type="number" id="age"></td>
+            </tr>
+            <tr>
+                <td><lable for="email">Email:</lable> </td>
+                <td><input type="text" id="email"></td>
+            </tr>
+
+            <tr>
+                <td><lable for="country">Nationality</lable></td>
+
+                <td><select id="country">
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Rest of the world">Rest of the world</option>
+                    </select>
+                </td>
+            </tr>
+
+
+        <tr>
+            <td><lable>I am intrested in</lable></td>
+            <td>
+                <input type="checkbox" name="technology" value="angular">Angular
+                <input type="checkbox" name="technology" value="react">React
+                <input type="checkbox" name="technology" value="python">Python
+            </td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="Submit">
+            <td><input type="button" value="Reset"></td>
+        </tr>
+    </table>
+
+</body>
+</html>

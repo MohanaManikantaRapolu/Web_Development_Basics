@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Source Element</title>
+    </head>
+
+    <body>
+
+
+
+        <!--
+            The <source> tag allows you to specify alternative multiple media resources for media elements, which the browser may choose from, based on its media type, codec support or media query.
+
+            You must list different media sources in order - most desirable to least desirable.
+
+            Note: <source> element is considered only when src attribute of media element is absent.
+
+        -->
+
+
+
+        <audio>
+            <source src="audiofilename.ogg" type="audio/ogg">
+            <sorce src="audiofilename.mp3" type="audio/mp3"></sorce>
+            <!--
+                 type   -> specifies type of audio file help browser to determine wether it can play this audio or not
+            -->
+        </audio>
+
+
+
+
+
+
+
+        <video >
+            <source src="videofile.mp4" type="video/mp4">
+            <source src="videofile.ogg" type="video/ogg" codecs="theora,vorbis">
+
+            <!-- 
+
+                type   -> specifies type of video file help browser to determine wether it can play this video or not
+                codecs -> specifies version of codecs needed to play video
+                theora -> video codec
+                vorbis -> audio codec
+
+                In the above example, browsers which do not support .ogg format of audio, will play the audio file with extension .mp3.
+
+                Similarly, browsers which do not support .mp4 format of video, will play the video file with extension .og
+            -->
+        </video>
+
+
+
+
+    </body>
+</html>
